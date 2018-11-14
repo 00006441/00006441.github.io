@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- my style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- site icon on browser tab -->
+    <link rel="shortcut icon" href="img/icon.ico">
+
+    <title>Study@Home All Courses</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="home.html"><img src="img/logo.png" alt="study@home" id="logo" height="40"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Categories
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="business.html">Business & Marketing</a>
+                        <a class="dropdown-item" href="design.html">Design & Photography</a>
+                        <a class="dropdown-item" href="it.html">IT & Web-development</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#firstall">All Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 mx-auto searchform" action="https://www.google.com/search" method="get"
+                name="searchform" target="_blank">
+                <input class="form-control mr-sm-2 search" type="text" placeholder="Search for Courses" aria-label="Search"
+                    id="searchbox" autocomplete="on" name="q">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <li class="nav-item" id="unstyledlist">
+                <button onclick="document.getElementById('login').style.display='block'" class="btn btn-outline-success">Login</button>
+            </li>
+        </div>
+    </nav>
+
+    <!-- login -->
+
+    <div id="login" class="modal">
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <button type="submit" class="btn btn-outline-success" id="signbutton">Login</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+
+
+    <section id="firstall">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <h1 class="display-1 animated pulse">All Courses</h1>
+                    <p class="animated pulse">Our web-site is startup so we don't have huge amount of data. It is
+                        launched on 15th of
+                        November. We have only several categories in our database but in the future more content will
+                        be uploaded</p>
+                    <br>
+                    <a href="#secondall" class="btn btn-outline-secondary btn-md animated pulse infinite">&darr;</a>
+                </div>
+                <div class="col-md-5">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="secondall">
+        <h1 class="display-3 text-center">Categories:</h1>
+        <div class="card-columns">
+            <div class="card">
+                <img class="card-img-top" src="img/business.jpg" alt="Business">
+                <div class="card-body">
+                    <h5 class="card-title">Business and Marketing Courses</h5>
+                    <p class="card-text">Creating your own business was your dream? Now with our courses about Business
+                        you can easily open good business without fear of failure. Famous entrepreneurs, business
+                        speakers are willing to teach you in our site!</p>
+                    <a href="business.html" class="btn btn-secondary">Go</a>
+                </div>
+            </div>
+            <div class="card p-3">
+                <blockquote class="blockquote mb-0 card-body">
+                    <p>You know you're in love when you can't fall asleep because reality is finally better than your
+                        dreams.</p>
+                    <footer class="blockquote-footer">
+                        <small class="text-muted">
+                            Dr. Seuss <cite title="Source Title">GoodReads</cite>
+                        </small>
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="card text-center bg-secondary">
+                <div class="card-body">
+                    <h5 class="card-title">Video Design Courses</h5>
+                    <p class="card-text">This content is under maintenance now. Materials will be aviable soon...</p>
+                    <p class="card-text"><small class="text-muted">2 days ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/woman-camera.jpg" alt="Design">
+                <div class="card-body">
+                    <h5 class="card-title">Design and Photography Courses</h5>
+                    <p class="card-text">Have you ever wondered about celebrities photos on social media? They are
+                        always perfect isn't it? By taking Photography courses you can learn taking good quality
+                        beautiful photos as well as videos!</p>
+                    <a href="design.html" class="btn btn-secondary">Go</a>
+                </div>
+            </div>
+            <div class="card text-center bg-secondary">
+                <div class="card-body">
+                    <h5 class="card-title">Music Courses</h5>
+                    <p class="card-text">This content is under maintenance now. Materials will be aviable soon...</p>
+                    <img class="card-img" src="img/guitar.jpg" alt="Card image">
+                    <p class="card-text"><small class="text-muted">2 days ago</small></p>
+                </div>
+            </div>
+            <div class="card p-3">
+                <blockquote class="blockquote mb-0 card-body">
+                    <p>Live as if you were to die tomorrow. Learn as if you were to live forever.</p>
+                    <footer class="blockquote-footer">
+                        <small class="text-muted">
+                            Mahatma Gandhi <cite title="Source Title">GoodReads</cite>
+                        </small>
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="card text-center bg-secondary">
+                <div class="card-body">
+                    <h5 class="card-title">Language Courses</h5>
+                    <p class="card-text">This content is under maintenance now. Materials will be aviable soon...</p>
+                    <p class="card-text"><small class="text-muted">2 days ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/code.jpg" alt="IT">
+                <div class="card-body">
+                    <h5 class="card-title">IT and Web-Development Courses</h5>
+                    <p class="card-text">Can you imagine your life without IT? If your answer is NO, this courses are
+                        for you!</p>
+                    <a href="it.html" class="btn btn-secondary">Go</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="allstat">
+        <hr>
+        <h1 class="text-center display-3">Brief Statistics:</h1>
+        <div id="rowstat">
+            <div id="columnstat">
+                <div id="cardstat">
+                    <p><i class="fa fa-user fa-3x"></i></p>
+                    <h3>11+</h3>
+                    <p>Partners</p>
+                </div>
+            </div>
+
+            <div id="columnstat">
+                <div id="cardstat">
+                    <p><i class="fa fa-check fa-3x"></i></p>
+                    <h3>55+</h3>
+                    <p>Categories</p>
+                </div>
+            </div>
+
+            <div id="columnstat">
+                <div id="cardstat">
+                    <p><i class="fa fa-smile fa-3x"></i></p>
+                    <h3>100+</h3>
+                    <p>Students</p>
+                </div>
+            </div>
+
+            <div id="columnstat">
+                <div id="cardstat">
+                    <p><i class="fa fa-book fa-3x"></i></p>
+                    <h3>100+</h3>
+                    <p>Courses</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6" id="copy">
+                    &copy; Study@Home is not a real site!!! This web-site was created by student with the id of <u>00006441</u>
+                    to fulfill <u>Web Technologies</u>
+                    module's requirements and does not represent actual company or service!!!
+                    <hr>
+                    <h5>Follow me on:</h3>
+                        <a href="https://instagram.com/artikov08" target="_blank" id="social"><i class="fab fa-instagram fa-3x"></i></a>
+                        <a href="https://facebook.com/artikov08" target="_blank" id="social"><i class="fab fa-facebook fa-3x"></i></a>
+                        <a href="https://twitter.com/artikov08" target="_blank" id="social"><i class="fab fa-twitter fa-3x"></i></a>
+                </div>
+                <div class="col-sm-2 offset-sm-2" id="ftext">
+                    <h6>Site map:</h6>
+                </div>
+                <div class="col-sm-2" id="list">
+                    <ul class="list-styled">
+                        <li><a href="home.html" id="flist">Home</a></li>
+                        <li><a href="#firstall" id="flist">Categories</a></li>
+                        <li><a href="about.html" id="flist">About</a></li>
+                        <li><a href="#" id="flist">COURSEWORK REPORT!</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="logic.js"></script>
+</body>
+
+</html>

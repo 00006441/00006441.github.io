@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- my style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- site icon on browser tab -->
+    <link rel="shortcut icon" href="img/icon.ico">
+
+
+    <title>Study@Home About</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="home.html"><img src="img/logo.png" alt="study@home" id="logo" height="40"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Categories
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="business.html">Business & Marketing</a>
+                        <a class="dropdown-item" href="design.html">Design & Photography</a>
+                        <a class="dropdown-item" href="it.html">IT & Web-development</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="allcourses.html">All Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 mx-auto searchform" action="https://www.google.com/search" method="get"
+                name="searchform" target="_blank">
+                <input class="form-control mr-sm-2 search" type="text" placeholder="Search for Courses" aria-label="Search"
+                    id="searchbox" autocomplete="on" name="q">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <li class="nav-item" id="unstyledlist">
+                <button onclick="document.getElementById('login').style.display='block'" class="btn btn-outline-success">Login</button>
+            </li>
+        </div>
+    </nav>
+
+    <!-- login -->
+
+    <div id="login" class="modal">
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <button type="submit" class="btn btn-outline-success" id="signbutton">Login</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+
+
+    <section id="bmain">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 offset-md-3">
+
+                </div>
+                <div class="col-md-7">
+                    <h1 class="display-4 animated pulse" id="btext">Business and Marketing Courses</h1>
+                    <a href="#bsecond" class="btn btn-outline-secondary btn-md animated pulse infinite">&darr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bsecond">
+        <h1 class="text-center display-1">All Courses</h1>
+        <p class="text-center" id="ab">Learn business secrets from successful entrepreneurs as well as business
+            speakers, who are eager to share their experience and teach you</p>
+        <div class="card-columns">
+            <div class="card text-center">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/OG0xX5RS5e8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <button class="btn btn-secondary collapsible">More</button>
+                    <div id="collapse-content">
+                        <p>Simon Sinek's Course about Leadirship in Business Sphere: <br> "Learn to lead"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/9Xqs5XICzuE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <button class="btn btn-secondary collapsible">More</button>
+                    <div id="collapse-content">
+                        <p>Simon Sinek's Course about Leadirship in Business Sphere: <br> "Leaders put people first!"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-center">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/c_XZ36b_aDI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <button class="btn btn-secondary collapsible">More</button>
+                    <div id="collapse-content">
+                        <p>Simon Sinek's Course about Leadirship in Business Sphere: <br> "Leaders practise empathy"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6" id="copy">
+                    &copy; Study@Home is not a real site!!! This web-site was created by student with the id of <u>00006441</u>
+                    to fulfill <u>Web Technologies</u>
+                    module's requirements and does not represent actual company or service!!!
+                    <hr>
+                    <h5>Follow me on:</h3>
+                        <a href="https://instagram.com/artikov08" target="_blank" id="social"><i class="fab fa-instagram fa-3x"></i></a>
+                        <a href="https://facebook.com/artikov08" target="_blank" id="social"><i class="fab fa-facebook fa-3x"></i></a>
+                        <a href="https://twitter.com/artikov08" target="_blank" id="social"><i class="fab fa-twitter fa-3x"></i></a>
+                </div>
+                <div class="col-sm-2 offset-sm-2" id="ftext">
+                    <h6>Site map:</h6>
+                </div>
+                <div class="col-sm-2" id="list">
+                    <ul class="list-styled">
+                        <li><a href="home.html" id="flist">Home</a></li>
+                        <li><a href="allcourses.html" id="flist">Categories</a></li>
+                        <li><a href="about.html" id="flist">About</a></li>
+                        <li><a href="#" id="flist">COURSEWORK REPORT!</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="logic.js"></script>
+</body>
+
+</html>

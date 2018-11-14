@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- my style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- site icon on browser tab -->
+    <link rel="shortcut icon" href="img/icon.ico">
+
+    <title>Study@Home Home Page</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#mainback"><img src="img/logo.png" alt="study@home" id="logo" height="40"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Categories
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="business.html">Business & Marketing</a>
+                        <a class="dropdown-item" href="design.html">Design & Photography</a>
+                        <a class="dropdown-item" href="it.html">IT & Web-development</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="allcourses.html">All Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 mx-auto searchform" action="https://www.google.com/search" method="get"
+                name="searchform" target="_blank">
+                <input class="form-control mr-sm-2 search" type="text" placeholder="Search for Courses" aria-label="Search"
+                    id="searchbox" autocomplete="on" name="q">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <li class="nav-item" id="unstyledlist">
+                <button onclick="document.getElementById('login').style.display='block'" class="btn btn-outline-success">Login</button>
+            </li>
+        </div>
+    </nav>
+
+    <!-- login modal -->
+
+    <div id="login" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <button type="submit" class="btn btn-outline-success" id="signbutton">Login</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+
+    <section id="mainback">
+        <div id="maintext">
+            <h1 class="display-3 animated pulse">Welcome to the Study@Home</h1>
+            <p class="animated pulse">Sign up and start learning for free today!</p>
+            <a href="joinus.html" class="btn btn-secondary btn-lg animated pulse infinite">Join us!</a>
+        </div>
+    </section>
+
+    <section id="carousel">
+        <div id="carouselInd" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselInd" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselInd" data-slide-to="1"></li>
+                <li data-target="#carouselInd" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- image is taken from Unsplash.com -->
+                    <img class="d-block w-100" src="img/workhard.jpg" alt="LearnAnywhere">
+                    <div class="carousel-caption" id="caption">
+                        <h3 class="display-3">Learn anywhere, anytime</h3>
+                        <p>No matter where you are, just learn on your device. Our instructors offer audio materials as
+                            well as video materials!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- image is taken from Unsplash.com -->
+                    <img class="d-block w-100" src="img/hands.jpg" alt="Coworking">
+                    <div class="carousel-caption" id="caption">
+                        <h3 class="display-3">Find friends with same interests</h3>
+                        <p>You can easily communicate with instructors of online courses, and also with students who
+                            are taking same courses with you!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- image is taken from Unsplash.com -->
+                    <img class="d-block w-100" src="img/ipad.jpg" alt="Device">
+                    <div class="carousel-caption" id="caption">
+                        <h3 class="display-3">Learn with any device you have</h3>
+                        <p>Our site is accesible through all mobile devices, laptops and PCs. Only thing you need is
+                            Internet access and will to learning!</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselInd" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselInd" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+
+    <section id="postcarousel">
+        <div class="container" id="pcar">
+            <div id="pcartext">
+                <h1 class="display-4">Future of Studying</h1>
+                <p>Bill Gates argues that online courses can radically improve education by 2030.<br>In the world
+                    of technologies we can learn everything online and our site offers that learning opportunity
+                    for free!</p>
+            </div>
+            <div id="iframecont">
+                <iframe src="https://www.youtube.com/embed/Hrd0NiWMIjk" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="quotes">
+        <!-- Quotes-Slideshow container -->
+        <div class="slideshow-container">
+            <h1 class="display-3 text-center">Random Quotes</h1>
+            <div class="quotes">
+                <q>Don't cry because it's over, smile because it happened</q>
+                <p class="author">- Dr. Seuss</p>
+            </div>
+            <div class="quotes">
+                <q>Be yourself: everyone else is already taken</q>
+                <p class="author">- Oscar Wilde</p>
+            </div>
+            <div class="quotes">
+                <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+                <p class="author">- John Keats</p>
+            </div>
+            <div class="quotes">
+                <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+                <p class="author">- Ernest Hemingway</p>
+            </div>
+            <div class="quotes">
+                <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+                <p class="author">- Thomas A. Edison</p>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </section>
+
+    <footer id="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6" id="copy">
+                    &copy; Study@Home is not a real site!!! This web-site was created by student with the id of <u>00006441</u>
+                    to fulfill <u>Web Technologies</u>
+                    module's requirements and does not represent actual company or service!!!
+                    <hr>
+                    <h5>Follow me on:</h3>
+                        <a href="https://instagram.com/artikov08" target="_blank" id="social"><i class="fab fa-instagram fa-3x"></i></a>
+                        <a href="https://facebook.com/artikov08" target="_blank" id="social"><i class="fab fa-facebook fa-3x"></i></a>
+                        <a href="https://twitter.com/artikov08" target="_blank" id="social"><i class="fab fa-twitter fa-3x"></i></a>
+                </div>
+                <div class="col-sm-2 offset-sm-2" id="ftext">
+                    <h6>Site map:</h6>
+                </div>
+                <div class="col-sm-2" id="list">
+                    <ul class="list-styled">
+                        <li><a href="#mainback" id="flist">Home</a></li>
+                        <li><a href="allcourses.html" id="flist">Categories</a></li>
+                        <li><a href="about.html" id="flist">About</a></li>
+                        <li><a href="#" id="flist">COURSEWORK REPORT!</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="logic.js"></script>
+</body>
+
+</html>
